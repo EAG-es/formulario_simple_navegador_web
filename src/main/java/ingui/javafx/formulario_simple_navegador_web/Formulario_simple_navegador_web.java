@@ -459,7 +459,6 @@ public class Formulario_simple_navegador_web extends Navegador_web {
     }    
     /**
      * Captura las URLs que son llamadas (clic) en el navegador 
-     * /formulario_simple/index_html?nombre_apellidos=e&sexo=&fecha=1969-02-10&email=eag2001%40gmail.com&telefono=639833958&calle=Rambla+de+Santa+Cruz&portal_num=139&calle_extra=Edificio+Taomar&piso_num=1&puerta_num=12&vivienda_extra=&ciudad=Santa+Cruz+de+Tenerife&codigo_postal=38001&provincia_estado=Tenerife&password=contrase%C3%B1a&password_repetida=contrase%C3%B1a&fecha_y_hora_disponibilidad=2023-02-04T12%3A45&submit=Enviar
      * @param url
      * @param ok
      * @param extras_array
