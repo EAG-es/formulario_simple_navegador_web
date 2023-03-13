@@ -1,6 +1,5 @@
 package ingui.javafx.formulario_simple_navegador_web;
 
-import inclui.formularios.control_entradas;
 import static inclui.formularios.control_entradas.k_entradas_tipo_email;
 import static inclui.formularios.control_entradas.k_entradas_tipo_fecha;
 import static inclui.formularios.control_entradas.k_entradas_tipo_fecha_y_hora;
@@ -30,6 +29,7 @@ import static inweb.modelos_html.formularios.web_formularios.k_nombre_fragmento;
 import static inweb.modelos_html.formularios.web_formularios.k_valores_mapa_mensaje_error_tex;
 import static inweb.modelos_html.formularios.web_formularios.k_valores_mapa_url_destino_tex;
 import static inweb.modelos_html.formularios.web_formularios.k_valores_mapa_valor_tex;
+import inweb.modelos_html.modelos_html;
 import java.io.InputStream;
 import static java.lang.System.exit;
 import java.net.URL;
@@ -133,6 +133,8 @@ public class Formulario_simple_navegador_web extends Navegador_web {
             if (ok.es == false) { return ok.es; }
             _iniciar_desde_clase(modelos.class, ok);
             if (ok.es == false) { return ok.es; }
+            _iniciar_desde_clase(modelos_html.class, ok);
+            if (ok.es == false) { return ok.es; }
             _iniciar_desde_clase(modelos_comunicaciones.class, ok);
             if (ok.es == false) { return ok.es; }
             _iniciar_desde_clase(Navegador_web.class, ok);
@@ -146,6 +148,8 @@ public class Formulario_simple_navegador_web extends Navegador_web {
         public boolean terminar(oks ok, Object... extra_array) throws Exception {
             if (ok.es == false) { return ok.es; }
             _terminar_desde_clase(modelos.class, ok);
+            if (ok.es == false) { return ok.es; }
+            _terminar_desde_clase(modelos_html.class, ok);
             if (ok.es == false) { return ok.es; }
             _terminar_desde_clase(modelos_comunicaciones.class, ok);
             if (ok.es == false) { return ok.es; }
