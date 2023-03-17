@@ -120,7 +120,9 @@ public class Formulario_simple_navegador_web extends Navegador_web {
                     Formulario_simple_navegador_web.super.inicial.run(ok, Formulario_simple_navegador_web.class, extra_array[0]);
                     oks ok_fin = new oks();
                     terminar(ok_fin);
-                    ok.setTxt(ok.getTxt(), ok_fin.getTxt());
+                    if (ok_fin.es == false) {
+                        ok.setTxt(ok.getTxt(), ok_fin.getTxt());
+                    }
                 }
                 return ok.es;
             } catch (Exception e) {
