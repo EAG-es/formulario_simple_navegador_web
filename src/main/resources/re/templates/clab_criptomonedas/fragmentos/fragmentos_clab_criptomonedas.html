@@ -1,0 +1,38 @@
+<div>
+    <div th:utext="${info_tabla_tex}"></div>
+    <table th:fragment="control_tablas_criptomonedas">
+        <thead>
+            <tr>
+                <td id="id_cabecera_0"></td>
+                <td id="id_cabecera_1">Id.cripto</td>
+                <td id="id_cabecera_2">Símbolo</td>
+                <td id="id_cabecera_3">Cap.de mercado</td>
+                <td id="id_cabecera_4">Apo.circulante</td>
+                <td id="id_cabecera_5">Cap.tot.diluida</td>
+                <td id="id_cabecera_6">Apo.tot.</td>
+                <td id="id_cabecera_7">Apo.máx.</td>
+                <td id="id_cabecera_8">Dominancia</td>
+                <td id="id_cabecera_9">Tot.valor.bloq.</td>
+                <td id="id_cabecera_10">F.actu.</td>
+            </tr>
+        </thead>
+        <tbody th:utext="${tabla_cuerpo}">        
+        </tbody>
+    </table>
+</div>
+<tr th:fragment="control_tablas_fila_criptomoneda">
+    <td>
+        <input type="button" id="actualizar_${fila_num}" name="actualizar=${id_criptomoneda}" value="${boton_actualizar}"/>
+        <input type="button" id="borrar_${fila_num}" name="borrar=${id_criptomoneda}" value="${boton_borrar}"/>
+    </td>
+    <td th:utext="${id_criptomoneda}"></td>
+    <td th:utext="${simbolo}"></td>
+    <td th:utext="${capitalizacion_de_mercado}"></td>
+    <td th:utext="${aporte_circulante}"></td>
+    <td th:utext="${capitalizacion_total_diluida}"></td>
+    <td th:utext="${aporte_total}"></td>
+    <td th:utext="${aporte_maximo}"></td>
+    <td th:utext="${dominancia}"></td>
+    <td th:utext="${total_valor_bloqueado}"></td>
+    <td th:utext="${fecha_actualizacion}"></td>
+</tr>

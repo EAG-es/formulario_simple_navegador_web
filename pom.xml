@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ingui.javafx.formulario_simple_navegador_web</groupId>
-    <artifactId>formulario_simple_navegador_web</artifactId>
+    <groupId>ingui.javafx.clab_criptomonedas_navegador_web</groupId>
+    <artifactId>clab_criptomonedas_navegador_web</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>ingui.javafx.formulario_simple_navegador_web.Formulario_simple_navegador_web</exec.mainClass>
+        <exec.mainClass>ingui.javafx.clab_criptomonedas_navegador_web.Clab_criptomonedas_navegador_web</exec.mainClass>
     </properties>
     <build>
         <plugins>
@@ -31,7 +31,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>ingui.javafx.formulario_simple_navegador_web.Formulario_simple_navegador_web</mainClass>
+                            <mainClass>ingui.javafx.clab_criptomonedas_navegador_web.Clab_criptomonedas_navegador_web</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -95,5 +95,5 @@
             <version>17.0.2</version>
         </dependency>
     </dependencies>
-    <name>formulario_simple_navegador_web</name>
+    <name>clab_criptomonedas_navegador_web</name>
 </project>
