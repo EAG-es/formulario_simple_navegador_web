@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html th:fragment="html">
+    <head>
+        <title th:text="${titulo_tex}"></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table width='90%'>
+        <tr>
+            <td>
+                <img th:alt='${mensaje_imagen_tex}' 
+                     th:src='${imagen_ruta_tex}' 
+                     width='100' height='100'>
+            </td>
+            <td>
+                <h1 th:text="${mensaje_cabecera_tex}"></h1>
+            </td>
+        </tr>
+        </table>
+        <div th:utext="${formulario_tex}"></div>
+    </body>
+</html>
